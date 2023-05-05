@@ -7,13 +7,13 @@ stages:
       md5: 979566202f7bd589d6bbabe7c514f51c
       size: 315
     outs:
-    - path: data_raw.csv
+    - path: data.csv
       md5: a6aec8da63a5fa2619af025a76746f29
       size: 68868
   process_data:
     cmd: python process_data.py
     deps:
-    - path: data_raw.csv
+    - path: data.csv
       md5: a6aec8da63a5fa2619af025a76746f29
       size: 68868
     - path: process_data.py
